@@ -1,2 +1,2 @@
-# spring-boot2-learning
- SpringBoot2 学习记录
+# SpringBoot2 案例教程
+ 本教程整理自公众号 battcn
