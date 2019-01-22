@@ -9,7 +9,9 @@ import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
+
 import java.net.URL;
+
 import static org.junit.Assert.assertEquals;
 
 
@@ -34,6 +36,7 @@ public class Chapter1ApplicationTest {
 
     @Test
     public void demo1() throws Exception {
+        System.out.println(base.toString());
         ResponseEntity<String> response = template.getForEntity(base.toString(), String.class);
         assertEquals(response.getBody(), "Hello");
     }
