@@ -1,5 +1,7 @@
 package com.simple.chapter3.logback;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -11,7 +13,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  **/
 @SpringBootApplication
 public class Chapter3Application {
+
+    private static Logger logger = LoggerFactory.getLogger(Chapter3Application.class);
+
     public static void main(String[] args) {
         SpringApplication.run(Chapter3Application.class, args);
+        logger.warn("Start Success..");
     }
 }
