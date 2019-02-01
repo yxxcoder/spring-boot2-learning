@@ -16,6 +16,8 @@
     <modules>
         <module>logback-simple</module>
         <module>logback-xml</module>
+        <module>log4j-simple</module>
+        <module>log4j-xml</module>
     </modules>
 
     <properties>
