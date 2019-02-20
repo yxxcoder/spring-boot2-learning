@@ -19,5 +19,6 @@ public class Chapter3Application {
     public static void main(String[] args) {
         SpringApplication.run(Chapter3Application.class, args);
         logger.debug("Start Success..");
+        logger.error("Logger Error..");
     }
 }
