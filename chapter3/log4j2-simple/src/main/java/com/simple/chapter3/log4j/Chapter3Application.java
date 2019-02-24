@@ -18,6 +18,8 @@ public class Chapter3Application {
 
     public static void main(String[] args) {
         SpringApplication.run(Chapter3Application.class, args);
-        logger.warn("Start Success..");
+        logger.debug("Start Success..");
+        logger.info("Logger INFO..");
+        logger.error("Logger ERROR..");
     }
 }
