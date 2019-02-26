@@ -92,7 +92,6 @@
             <appender-ref ref="CONSOLE" />
             <appender-ref ref="DEBUG_FILE"/>
         </root>
-        <!-- 这里有点问题 -->
         <logger name="com.simple.chapter3.logback" level="debug"/>
     </springProfile>
 
