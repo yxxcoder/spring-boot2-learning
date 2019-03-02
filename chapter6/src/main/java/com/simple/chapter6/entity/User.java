@@ -5,6 +5,7 @@ import java.io.Serializable;
 
 /**
  * 实体类
+ *
  * @author yxxcoder
  */
 @Entity(name = "t_user")
