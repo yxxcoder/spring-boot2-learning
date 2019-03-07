@@ -10,10 +10,10 @@
         </Console>
 
         <!--配置自定义日志，按天输出-->
-        <RollingFile name="rolling" fileName="logs/rolling.log" filePattern="logs/rolling-%d{yyyy-MM-dd}.log" >
+        <RollingFile name="rolling" fileName="logs/rolling.log" filePattern="logs/rolling-%d{yyyy-MM-dd}.log">
             <PatternLayout pattern="%d{yyyy.MM.dd HH:mm:ss.SSS} %-5level %class{36} %L %M - %msg%xEx%n"/>
             <Policies>
-                <TimeBasedTriggeringPolicy />
+                <TimeBasedTriggeringPolicy/>
             </Policies>
         </RollingFile>
 
@@ -34,7 +34,7 @@
 
         <root level="info">
             <appender-ref ref="console"/>
-            <appender-ref ref="error" />
+            <appender-ref ref="error"/>
         </root>
 
         <!-- additivity="true" 的意思是会在控制台也输入一份-->

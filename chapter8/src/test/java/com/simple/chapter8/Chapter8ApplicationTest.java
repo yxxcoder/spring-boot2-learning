@@ -22,7 +22,7 @@ public class Chapter8ApplicationTest {
     private UserMapper userMapper;
 
     @Test
-    public void test1() throws Exception {
+    public void test1() {
         final User user1 = new User("u1", "p1");
         final User user2 = new User("u1", "p2");
         final User user3 = new User("u3", "p3");

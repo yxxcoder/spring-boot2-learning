@@ -3,7 +3,7 @@
 <mapper namespace="com.simple.chapter7.mapper.UserMapper">
 
     <insert id="insert" parameterType="com.simple.chapter7.entity.User">
-      INSERT INTO `t_user`(`username`,`password`) VALUES (#{username},#{password})
+        INSERT INTO `t_user`(`username`,`password`) VALUES (#{username},#{password})
     </insert>
 
 </mapper>
