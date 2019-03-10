@@ -22,7 +22,7 @@ public class Chapter10ApplicationTest {
 
     /**
      * 从日志可以看出，查询是没有日志输出的，因为它直接从缓存中获取的数据
-     *
+     * <p>
      * 控制台日志如下：
      * 进入 saveOrUpdate 方法
      * [saveOrUpdate] - [User{id=5, username='u5', password='p5'}]
