@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * 用于消息发送工作
+ * 用于消息发送
  *
  * @author yxxcoder
  * @since 2019-03-11 17:21 PM
