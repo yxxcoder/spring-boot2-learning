@@ -14,7 +14,7 @@
 #### [第十篇：使用Spring Cache集成Redis](https://github.com/yxxcoder/spring-boot2-learning/tree/master/chapter10)
 #### [第十一篇：集成Swagger在线调试](https://github.com/yxxcoder/spring-boot2-learning/tree/master/chapter11)
 #### [第十二篇：初探RabbitMQ消息队列](https://github.com/yxxcoder/spring-boot2-learning/tree/master/chapter12)
-#### [第十三篇：](https://github.com/yxxcoder/spring-boot2-learning/tree/master/chapter13)
-#### [第十四篇：](https://github.com/yxxcoder/spring-boot2-learning/tree/master/chapter14)
+#### [第十三篇：RabbitMQ延迟队列](https://github.com/yxxcoder/spring-boot2-learning/tree/master/chapter13)
+#### [第十四篇：强大的 actuator 服务监控与管理](https://github.com/yxxcoder/spring-boot2-learning/tree/master/chapter14)
 #### [第十五篇：](https://github.com/yxxcoder/spring-boot2-learning/tree/master/chapter15)
 
