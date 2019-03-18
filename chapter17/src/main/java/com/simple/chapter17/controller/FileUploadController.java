@@ -45,7 +45,7 @@ public class FileUploadController {
 
         File tempFile = new File("/Users/yuxuan/data/upload1/" + file.getOriginalFilename());
         //判断目标文件所在的目录是否存在
-        if(! checkDir(tempFile)) {
+        if (!checkDir(tempFile)) {
             log.info("创建目标文件所在目录失败！");
             return null;
         }
@@ -69,7 +69,7 @@ public class FileUploadController {
         for (MultipartFile file : files) {
             File tempFile = new File("/Users/yuxuan/data/upload2/" + file.getOriginalFilename());
             //判断目标文件所在的目录是否存在
-            if(! checkDir(tempFile)) {
+            if (!checkDir(tempFile)) {
                 log.info("创建目标文件所在目录失败！");
                 return null;
             }
@@ -89,7 +89,7 @@ public class FileUploadController {
     public void upload2(String base64) throws IOException {
         final File tempFile = new File("/Users/yuxuan/data/upload3/test.jpg");
         //判断目标文件所在的目录是否存在
-        if(! checkDir(tempFile)) {
+        if (!checkDir(tempFile)) {
             log.info("创建目标文件所在目录失败！");
             return;
         }
@@ -104,10 +104,10 @@ public class FileUploadController {
      * 判断目标文件所在的目录是否存在，如果目标文件所在的目录不存在，则创建父目录
      */
     private boolean checkDir(File file) {
-        if(! file.getParentFile().exists()) {
+        if (!file.getParentFile().exists()) {
             //如果目标文件所在的目录不存在，则创建父目录
             log.info("目标文件所在目录不存在，准备创建它！");
-            if(! file.getParentFile().mkdirs()) {
+            if (!file.getParentFile().mkdirs()) {
                 log.info("创建目标文件所在目录失败！");
                 return false;
             }

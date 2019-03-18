@@ -9,8 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>chapter17</artifactId>
-    <description>轻松搞定文件上传</description>
+    <artifactId>chapter18</artifactId>
+    <description>轻松搞定全局异常</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -28,7 +28,8 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
