@@ -2,7 +2,6 @@ package com.simple.chapter18.controller;
 
 import com.simple.chapter18.exception.CustomException;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
