@@ -14,7 +14,7 @@ import java.math.BigDecimal;
  * @author yxxcoder
  * @since 2019-03-20 09:55 PM
  */
-public class Book implements Serializable{
+public class Book implements Serializable {
 
     private static final long serialVersionUID = 8655151613465373473L;
 
