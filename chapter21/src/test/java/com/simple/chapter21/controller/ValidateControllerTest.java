@@ -37,6 +37,9 @@ public class ValidateControllerTest {
         String response = template.getForObject(insertUrl + "?id={1}", String.class, "1");
         Assert.assertTrue(response.contains("name 不允许为空"));
         Assert.assertTrue(response.contains("price 不允许为空"));
+
+        String response2 = template.getForObject(insertUrl + "?name={1}&price={2}", String.class, "Jerry", 1);
+        Assert.assertTrue(response2.contains("insert"));
     }
 
     @Test
@@ -45,5 +48,8 @@ public class ValidateControllerTest {
         Assert.assertTrue(response.contains("id 不能为空"));
         Assert.assertTrue(response.contains("name 不允许为空"));
         Assert.assertTrue(response.contains("price 不允许为空"));
+
+        String response2 = template.getForObject(updateUrl + "?id={1}&name={2}&price={3}", String.class, 1, "Jerry", 100);
+        Assert.assertTrue(response2.contains("update"));
     }
 }
