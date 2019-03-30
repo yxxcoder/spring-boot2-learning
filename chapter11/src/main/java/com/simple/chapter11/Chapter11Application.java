@@ -3,7 +3,6 @@ package com.simple.chapter11;
 import com.battcn.swagger.annotation.EnableSwagger2Doc;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cache.annotation.EnableCaching;
 
 /**
  * 集成Swagger在线调试
