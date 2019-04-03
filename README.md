@@ -27,3 +27,4 @@
 #### [第二十三篇：轻松搞定重复提交（分布式锁）](https://github.com/yxxcoder/spring-boot2-learning/tree/master/chapter23)
 #### [第二十四篇：数据库管理与迁移（Liquibase）](https://github.com/yxxcoder/spring-boot2-learning/tree/master/chapter24)
 #### [第二十五篇：打造属于自己的聊天室（WebSocket）](https://github.com/yxxcoder/spring-boot2-learning/tree/master/chapter25)
+#### [第二十六篇：轻松搞定安全框架（Shiro）](https://github.com/yxxcoder/spring-boot2-learning/tree/master/chapter26)
