@@ -23,15 +23,13 @@ import java.util.UUID;
 @Configuration
 public class LockMethodInterceptor {
 
+    private final RedisLockHelper redisLockHelper;
+    private final CacheKeyGenerator cacheKeyGenerator;
     @Autowired
     public LockMethodInterceptor(RedisLockHelper redisLockHelper, CacheKeyGenerator cacheKeyGenerator) {
         this.redisLockHelper = redisLockHelper;
         this.cacheKeyGenerator = cacheKeyGenerator;
     }
-
-    private final RedisLockHelper redisLockHelper;
-    private final CacheKeyGenerator cacheKeyGenerator;
-
 
     @Around("execution(public * *(..)) && @annotation(com.simple.chapter23.annotation.CacheLock)")
     public Object interceptor(ProceedingJoinPoint pjp) {
