@@ -53,7 +53,7 @@ public class LockMethodInterceptor {
                 throw new RuntimeException("系统异常");
             }
         } finally {
-            // 如果演示的话需要注释该代码;实际应该放开
+            // 如果演示的话需要注释该代码; 实际应该放开
             redisLockHelper.unlock(lockKey, value);
         }
     }
