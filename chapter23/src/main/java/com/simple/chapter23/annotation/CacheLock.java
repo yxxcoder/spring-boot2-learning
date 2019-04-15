@@ -21,11 +21,11 @@ public @interface CacheLock {
     String prefix() default "";
 
     /**
-     * 过期秒数,默认为5秒
+     * 过期秒数,默认为 30 秒
      *
      * @return 轮询锁的时间
      */
-    int expire() default 5;
+    int expire() default 30;
 
     /**
      * 超时时间单位

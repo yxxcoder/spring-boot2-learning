@@ -40,21 +40,21 @@ public class LockMethodInterceptor {
             throw new RuntimeException("lock key don't null...");
         }
         final String lockKey = cacheKeyGenerator.getLockKey(pjp);
-        String value = UUID.randomUUID().toString();
+        ThreadLocal<String> value = new ThreadLocal<>();
+        value.set(UUID.randomUUID().toString());
+
+        // 假设上锁成功，但是设置过期时间失效，以后拿到的都是 false
+        final boolean success = redisLockHelper.lock(lockKey, value.get(), lock.expire(), lock.timeUnit());
+        if (!success) {
+            throw new RuntimeException("重复提交");
+        }
         try {
-            // 假设上锁成功，但是设置过期时间失效，以后拿到的都是 false
-            final boolean success = redisLockHelper.lock(lockKey, value, lock.expire(), lock.timeUnit());
-            if (!success) {
-                throw new RuntimeException("重复提交");
-            }
-            try {
-                return pjp.proceed();
-            } catch (Throwable throwable) {
-                throw new RuntimeException("系统异常");
-            }
+            return pjp.proceed();
+        } catch (Throwable throwable) {
+            throw new RuntimeException("系统异常");
         } finally {
             // 如果演示的话需要注释该代码; 实际应该放开
-            redisLockHelper.unlock(lockKey, value);
+            redisLockHelper.unlock(lockKey, value.get());
         }
     }
 }
