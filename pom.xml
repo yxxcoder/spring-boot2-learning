@@ -36,6 +36,8 @@
         <module>chapter24</module>
         <module>chapter25</module>
         <module>chapter26</module>
+        <module>chapter27</module>
+        <module>chapter28</module>
     </modules>
 
     <dependencyManagement>
